@@ -16,5 +16,6 @@ Imports:
   lubridate
 Suggests:
   egg,
-  rlist
+  rlist,
+    testthat
 RoxygenNote: 6.0.1

@@ -240,3 +240,12 @@ StockChartClass <- R6Class(
   )
 
 )
+
+
+
+DataSet <- LoadTestSymbol(amplitude = c(1, 2, 1, 2), slope = c(0.2, -0.5, -.1, -1.5)) %>%
+  df_filter(Date > ymd("2017-01-01"))
+
+StockChart <- StockChartClass$new(DataSet)
+
+StockChart$ggplot()
